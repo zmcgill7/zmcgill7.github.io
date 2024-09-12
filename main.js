@@ -1,3 +1,23 @@
+var currentImg = 0;
+
+document.addEventListener('DOMContentLoaded', function () {
+    showSlides(currentImg);
+});
+
+function showSlides(n) {
+    var images = document.querySelectorAll('.slide');
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.display = 'none';
+    }
+
+    currentImg += n;
+    if (currentImg >= images.length) { currentImg = 0; }
+    if (currentImg < 0) { currentImg = images.length - 1; }
+
+    images[currentImg].style.display = 'flex';
+}
+
 function validateForm() {
     const submitButton = document.getElementById('submit-contact');
     const name = document.getElementById('name').value.trim();
