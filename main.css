@@ -37,7 +37,13 @@ header {
     padding-right: 2rem;
 }
 
+.section a {
+    color: white;
+    text-decoration: none;
+}
+
 header a {
+    color: white;
     text-decoration: none;
 }
 
@@ -54,6 +60,7 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5rem;
 }
 
 #home h1,
@@ -61,6 +68,16 @@ header a {
     margin: 0;
     padding: 0;
     color: white;
+    font-size: 3.5rem;
+}
+
+#home a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-top: 2rem;
 }
 
 #about {
@@ -70,19 +87,48 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
 
-#skills {
+#about p {
+    width: 30%;
+}
+
+#skills-section {
     width: 100vw;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
 
-#skills h1 {
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+#skills-section h1,
+#skills-section p {
     color: white;
+}
+
+#skills-section img {
+    width: 8rem;
+    height: auto;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }
 
 #projects {
@@ -92,6 +138,8 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
 
 #contact {
@@ -101,32 +149,61 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+#contact h1 {
+    color: white;
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-}
-
-#contact label {
-    color: white;
 }
 
 #contact input:not([type="submit"]),
 #contact textarea {
     background-color: transparent;
     color: white;
-    border-color: white;
-    border-radius: 3px;
-    border-width: 1px;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 1rem;
 }
 
 .disabled-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 3px;
+    align-self: center;
 }
 
 .enabled-button {
-    border-radius: 3px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    align-self: center;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+    padding: 0;
 }
