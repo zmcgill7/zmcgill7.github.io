@@ -303,9 +303,9 @@ footer a:hover {
     border-radius: 3px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
     .slide {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .slide img {
