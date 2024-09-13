@@ -98,7 +98,7 @@ header a {
     /* background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(180, 174, 174) 15%, rgb(180, 174, 174) 85%, rgb(0, 0, 0) 100%); */
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%),
-        url(static/test.jpg);
+        url(static/About-Background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -163,6 +163,7 @@ header a {
     background-image: url(static/Project-Background.jpg);
     background-size: cover;
     background-position: center;
+    filter: contrast(80%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,6 +184,7 @@ header a {
     align-items: stretch;
     width: 95%;
     padding: 1rem;
+    filter: contrast(100%);
 }
 
 .slide img {
