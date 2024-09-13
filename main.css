@@ -8,8 +8,12 @@ body {
     padding: 0;
 }
 
+.nav-wrapper {
+    display: flex;
+}
+
 header {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(46, 41, 41, .4);
     backdrop-filter: saturate(1.8) blur(20px);
     padding-left: 2rem;
     display: flex;
@@ -42,6 +46,12 @@ header {
     text-decoration: none;
 }
 
+.nav-wrapper a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 3px;
+}
+
 header a {
     color: white;
     text-decoration: none;
@@ -49,18 +59,17 @@ header a {
 
 .empty {
     height: 2rem;
-    width: 100vw;
-    background-color: #00001A;
+    background-color: #000000;
 }
 
 #home {
-    width: 100vw;
-    background-color: #00001a;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 10rem;
+    padding-bottom: 15rem;
 }
 
 #home h1,
@@ -80,23 +89,40 @@ header a {
     margin-top: 2rem;
 }
 
+#home a:hover {
+    background-color: white;
+    color: black;
+}
+
 #about {
-    width: 100vw;
-    background-image: linear-gradient(rgb(48, 161, 202), rgb(240, 240, 240));
+    /* background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(180, 174, 174) 15%, rgb(180, 174, 174) 85%, rgb(0, 0, 0) 100%); */
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%),
+        url(static/About-Background.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
+    padding: 6rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+#about h1 {
+    color: white;
+    font-size: 2.5rem;
 }
 
 #about p {
-    width: 30%;
+    width: 80%;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 #skills-section {
-    width: 100vw;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -116,6 +142,7 @@ header a {
 #skills-section h1,
 #skills-section p {
     color: white;
+    font-size: 2.5rem;
 }
 
 #skills-section img {
@@ -132,8 +159,10 @@ header a {
 }
 
 #projects {
-    width: 100vw;
-    background-color: white;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%), url(static/Project-Background.jpg); */
+    background-image: url(static/Project-Background.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,18 +171,24 @@ header a {
     padding-bottom: 6rem;
 }
 
+#projects h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
 .slide {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    width: 100%;
+    width: 95%;
     padding: 1rem;
 }
 
 .slide img {
     width: 60%;
-    height: auto;
+    height: 450px;
+    opacity: 0.9;
     border: 1px solid black;
 }
 
@@ -164,13 +199,31 @@ header a {
     justify-content: center;
     width: 40;
     border: 1px solid black;
-    background-color: rgb(81, 159, 187);
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5rem;
+    color: white;
+}
+
+.left-arrow {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 30%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.right-arrow {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 30%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #contact {
-    width: 100vw;
-    background-color: #00001a;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +267,7 @@ header a {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,4 +285,141 @@ footer a {
     text-decoration: none;
     margin: 1rem 1.5rem;
     padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .sections {
+        display: none;
+    }
+
+    .section {
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header {
+        padding-left: 1rem;
+    }
+
+    #home {
+        padding: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home a {
+        margin-top: 1rem;
+    }
+
+    #about {
+        padding: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+    }
+
+    #skills-section {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    #skills-section h1 {
+        font-size: 2rem;
+    }
+
+    #skills-section p {
+        font-size: 1.2rem;
+    }
+
+    .skills {
+        width: 80%;
+    }
+
+    #skills-section img {
+        width: 6rem;
+    }
+
+    .skill {
+        margin: 0.5rem;
+    }
+
+    #projects {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    #projects h1 {
+        font-size: 2rem;
+    }
+
+    .slide {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-description {
+        padding: 0;
+    }
+
+    .project-description p {
+        padding: .5rem;
+        margin: 0;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    #contact form {
+        margin: 1rem;
+    }
+
+    #contact input:not([type="submit"]),
+    #contact textarea {
+        margin: 0.5rem;
+    }
+
+    .disabled-button {
+        margin-top: 0.5rem;
+    }
+
+    .enabled-button {
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        margin: 0;
+    }
 }

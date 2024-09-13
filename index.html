@@ -11,23 +11,25 @@
 </head>
 
 <body>
-    <header>
-        <a href="#home">Home</a>
-        <ul class="sections">
-            <li class="section">
-                <a href="#about">About</a>
-            </li>
-            <li class="section">
-                <a href="#skills">Skills</a>
-            </li>
-            <li class="section">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="section">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
+    <div class="nav-wrapper">
+        <header>
+            <a href="#home">Home</a>
+            <ul class="sections">
+                <li class="section">
+                    <a href="#about">About</a>
+                </li>
+                <li class="section">
+                    <a href="#skills-section">Skills</a>
+                </li>
+                <li class="section">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="section">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </header>
+    </div>
     <div class="empty"></div>
     <div id="home">
         <div>
@@ -40,17 +42,18 @@
     <div id="about">
         <h1>About</h1>
         <p>
-            I'm a junior studying computer science at Purdue Fort Wayne. I'm fully commited to life long learning and
+            I'm a junior studying computer science at Purdue Fort Wayne with a perfect grade point average. I'm fully
+            commited to life long learning and
             have a
             passion to achieve my full potential. I'm a rapid learner and strive to be teachable. Outside of university,
             I
-            dedicate my time to researching, taking specialized courses, working on projects and LeetCode challenges,
-            and a
-            bit of Netflix here and there. The styling applied to this website is fully self taught in the span of two
-            weeks
+            dedicate my time to researching, taking specialized courses, working on projects, and LeetCode challenges.
+            The styling applied to this website is fully self taught in the span of two
+            weeks and the website was built in two days
             while balencing my college courses. I utilized comprehensive courses in CSS mastery from start to finish.
             The
-            message I want to convey is that I am malluable to needs of a company. I love working with others and have
+            message I want to convey is that I am malluable to the needs of a company. I love working with others and
+            have
             developed strong soft skills to allow for easy transitions into workplace enviorments. I am eager to align
             my
             skills with the needs of your company and am committed to rapidly acquiring any additional expertise
@@ -128,10 +131,11 @@
                     user and all the links take you to a website displaying the recipe in more detail.</p>
             </div>
         </div>
+        <!-- RecipeMaster ends -->
+
         <div class="arrows">
-            <button class="left-button" onclick="showSlides(-1)">
-                < </button>
-                    <button class="right-button" onclick="showSlides(1)"> > </button>
+            <a class="left-arrow" onclick="showSlides(-1)">&#10094;</a>
+            <a class="right-arrow" onclick="showSlides(1)">&#10095;</a>
         </div>
     </div>
     <div id="contact">
@@ -146,9 +150,9 @@
     </div>
     <footer>
         <div>
-            <a href="">Github</a>
+            <a href="https://github.com/zmcgill7">Github</a>
             <a href="static/resumeInProgress.pdf" download>Download My Resume</a>
-            <a href="">Email</a>
+            <a href="mailto:zacharymcgill07@gmail.com">Email</a>
         </div>
     </footer>
 </body>
