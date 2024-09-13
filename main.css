@@ -98,7 +98,7 @@ header a {
     /* background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(180, 174, 174) 15%, rgb(180, 174, 174) 85%, rgb(0, 0, 0) 100%); */
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%),
-        url(static/About-Background.jpg);
+        url(static/test.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -296,22 +296,26 @@ footer a {
         display: none;
     }
 
-    .nav-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
     header {
         padding-left: 1rem;
+    }
+
+    header a {
+        font-size: 1.25rem;
     }
 
     #home {
         padding: 5rem;
         padding-bottom: 10rem;
+        text-align: center;
     }
 
     #home h1 {
         font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.5rem;
     }
 
     #home a {
@@ -415,11 +419,7 @@ footer a {
         margin-top: 0.5rem;
     }
 
-    footer {
-        padding: 1rem;
-    }
-
     footer a {
-        margin: 0;
+        margin: 1rem;
     }
 }
