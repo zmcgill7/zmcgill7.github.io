@@ -133,9 +133,9 @@ header a {
 }
 
 .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 60%;
 }
 
@@ -163,6 +163,7 @@ header a {
     background-image: url(static/Project-Background.jpg);
     background-size: cover;
     background-position: center;
+    /* filter: saturation(0.5); */
     filter: contrast(80%);
     display: flex;
     flex-direction: column;
