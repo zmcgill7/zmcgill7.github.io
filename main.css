@@ -290,7 +290,45 @@ footer a {
     padding: 0;
 }
 
+footer a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1400px) {
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-description {
+        padding: 1rem;
+    }
+
+    .project-description p {
+        font-size: 1.5rem;
+    }
+
+    .project-description h2 {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 60%;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
     .sections {
         display: none;
     }
@@ -425,4 +463,4 @@ footer a {
     footer a {
         margin: 1rem;
     }
-}
+} */
